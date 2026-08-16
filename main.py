@@ -68,13 +68,13 @@ def agent(obs):
 
     # ---- market. Hour 0 is HIRE-only so the 10-order cap never eats a SELL.
     if hour == 0 and day < LAST_DAY:
-        for _ in range(6):
+        for _ in range(6): 
             market.append(["HIRE"])
     else:
         if len(me["unlocked_quadrants"]) < 4 and day < 20 and money > 5000:
             market.append(["BUY_LAND"])
         empt = sum(1 for r in tiles for t in r if t is None)
-        for crop, until in (("CARROT", 26), ("WHEAT", 25)):
+        for crop, until in (("WHEAT", 25), ("CARROT", 26)):
             want = min(empt, 30) - seeds.get(crop, 0)
             if want > 0 and day <= until and money > CROP[crop]["seed"] * want + 400:
                 market.append(["BUY_SEED", crop, want])
@@ -92,7 +92,7 @@ def agent(obs):
             if t == "LOCKED":
                 continue
             if t is None:
-                for crop, until in (("CARROT", 26), ("WHEAT", 25)):
+                for crop, until in (("WHEAT", 25), ("CARROT", 26)):
                     if day <= until and seeds.get(crop, 0) > 0:
                         tasks.append((3, (x, y), ["PLANT", crop], crop))
                         break
