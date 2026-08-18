@@ -28,4 +28,8 @@
   * consider use of animals? cows prolly
   * need to get rid of weeds faster, maybe dedicate hands to that?
 
-6
+16.08.25
+
+* added hire amount improver
+* prioritising wheat but need to consider other crops/animals
+* add a % based weed clearer?
