@@ -27,3 +27,5 @@
   * improve selling logic to consider market state
   * consider use of animals? cows prolly
   * need to get rid of weeds faster, maybe dedicate hands to that?
+
+6
