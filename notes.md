@@ -33,3 +33,5 @@
 * added hire amount improver. slightly improved
 * prioritising wheat but need to consider other crops/animals
 * add a % based weed clearer. didnt really do much[s]()
+
+29.08.25
